@@ -6,6 +6,7 @@ h5,
 h6,
 p {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 h1,
@@ -25,12 +26,22 @@ body {
 
 
 #container {
-    width: 960px;
+    width: 70%;
     background-color: #fff;
     margin: 0 auto;
+    padding: 20px;
 }
 
 
 .intro {
     text-align: center;
+}
+
+
+#display-time {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
 }
