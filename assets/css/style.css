@@ -43,5 +43,5 @@ body {
 }
 
 form {
-    display: inline-block;
+    display: inherit;
 }
