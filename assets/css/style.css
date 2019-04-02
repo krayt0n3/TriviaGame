@@ -53,11 +53,31 @@ form {
 .viper,
 .phone,
 .japan,
-.germany {
+.germany,
+.hitchhiker {
     text-align: center;
 
 }
 
 label {
     padding-right: .8%;
+}
+
+
+.btn-dark:hover {
+    color: #23272b;
+    background-color: #fff;
+    border-color: #1d2124;
+}
+
+.btn-dark {
+    margin: 0 auto;
+}
+
+#wrapper {
+    display: block;
+}
+
+#wrapper-2 {
+    display: none;
 }

@@ -1,75 +1,37 @@
-window.onload = function() {
+$( document ).ready(function() {
+ 
+var seconds = 30;
+var countdown = setInterval(function() {
+    seconds--;
+    $('.time').html(seconds)
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
 
-var clockRunning = false;
-var time = 90;
-var correct = 0;
-var incorrect = 0;
-var unanswered = 0;
 
-function countDown(t) {
-    setInterval(() => time--, 1000);
-    console.log('this works');
-}
-
-function timeConverter(t) {
-
-    //  Takes the current time in seconds and convert it to minutes and seconds (mm:ss).
-    var minutes = Math.floor(t / 60);
-    var seconds = t - (minutes * 60);
-  
-    if (seconds < 10) {
-      seconds = "0" + seconds;
+function changeScreens() {
+    var x = document.getElementById("wrapper-2");
+    var y = document.getElementById("wrapper");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      setTimeout(function() {
+        location.reload();
+    }, 5000);
+    } else {
+      x.style.display = "none";
     }
-  
-    if (minutes === 0) {
-      minutes = "00";
-    }
-  
-    else if (minutes < 10) {
-      minutes = "0" + minutes;
-    }
-  
-    return minutes + ":" + seconds;
+
+    if (y.style.display === "block") {
+        y.style.display = "none";
+      } else {
+        y.style.display = "block";
+      }
   }
 
+$('.btn-dark').click(changeScreens);
 
-  function count() {
-    time--;
-    //  TODO: increment time by 1, remember we cant use "this" here.
-  var timeOn =timeConverter(time);
-    //  TODO: Get the current time, pass that into the timeConverter function,
-    //        and save the result in a variable.
-  $("#display-time").append(timeOn);
-    //  TODO: Use the variable you just created to show the converted time in the "display" div.
-  
-  }
-
-
-  function reset() {
-    $('#display-time').text('00.00');
-    time = 60;
-  
-    //  TODO: Change the "display" div to "00:00."
-  
-  }
-
- count();
+    
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
+  console.log( "works" );
+});

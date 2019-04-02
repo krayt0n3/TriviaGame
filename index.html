@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>
 </head>
 <body>
@@ -15,106 +16,138 @@
                 <span class="navbar-brand mb-0 h1">Let's Play Some Trivia</span>
               </nav>
     <div id="container">
-        <div id="row">
-            <h2 class="intro">Time for Some Trivia</h2>
-        </div>
-        <div id="row">
-            
-            <div id="display-time">Time Remaining: </div>
-        </div>
-        <br />
-        <div id="row">
-            <form>
-                <h6>Oak trees are part of which genus?</h6>
-                <div class="oaks">
-                  <input type="radio" id="quercus" name="oak" value="quercus">
-                  <label for="quercus">Quercus</label>
-                  
-                  <input type="radio" id="animalia" name="oak" value="animalia">
-                  <label for="animalia">Animalia</label>
-                  
-                  <input type="radio" id="vulpes" name="oak" value="vulpes">
-                  <label for="vulpes">Vulpes</label>
-
-                  <input type="radio" id="canidae" name="oak" value="canidae">
-                  <label for="canidae">Canidae</label>
+        <div id="wrapper">
+            <div id="row">
+                <h2 class="intro">Time for Some Trivia</h2>
                 </div>
-                <!--Quercus-->
+
+                <div id="row">
+            
+                    <div id="display-time">Time Remaining: <span class="time">30</span></div>
+                </div>
+
+                    <br />
+
+                    <div id="row">
+                    <form>
+                    <h6>Oak trees are part of which genus?</h6>
+                    <div class="oaks">
+                    <input type="radio" id="quercus" name="oak" value="quercus">
+                    <label for="quercus">Quercus</label>
+                  
+                    <input type="radio" id="animalia" name="oak" value="animalia">
+                    <label for="animalia">Animalia</label>
+                  
+                    <input type="radio" id="vulpes" name="oak" value="vulpes">
+                    <label for="vulpes">Vulpes</label>
+
+                    <input type="radio" id="canidae" name="oak" value="canidae">
+                    <label for="canidae">Canidae</label>
+                    </div>
+                    <!--Quercus-->
            
-                <br />
+                    <br />
                 
-                <h6>How many cylinders did the first generation Dodge Viper have?</h6>
-                <div class="viper">
-                        <input type="radio" id="4" name="cylinders" value="4">
-                        <label for="4">4</label>
+                    <h6>How many cylinders did the first generation Dodge Viper have?</h6>
+                    <div class="viper">
+                    <input type="radio" id="4" name="cylinders" value="4">
+                    <label for="4">4</label>
                         
-                        <input type="radio" id="12" name="cylinders" value="12">
-                        <label for="12">12</label>
+                    <input type="radio" id="12" name="cylinders" value="12">
+                    <label for="12">12</label>
                         
-                        <input type="radio" id="10" name="cylinders" value="10">
-                        <label for="10">10</label>
+                    <input type="radio" id="10" name="cylinders" value="10">
+                    <label for="10">10</label>
       
-                        <input type="radio" id="6" name="cylinders" value="6">
-                        <label for="6">6</label>
-                </div>
-                <!--10-->
+                    <input type="radio" id="6" name="cylinders" value="6">
+                    <label for="6">6</label>
+                    </div>
+                    <!--10-->
             
-                <br />
+                    <br />
               
-                <h6>What nationality was inventor Alexander Graham Bell?</h6>
-                <div class="phone">
-                        <input type="radio" id="irish" name="bell" value="irish">
-                        <label for="irish">Irish</label>
+                    <h6>What nationality was inventor Alexander Graham Bell?</h6>
+                    <div class="phone">
+                    <input type="radio" id="irish" name="bell" value="irish">
+                    <label for="irish">Irish</label>
                         
-                        <input type="radio" id="scottish" name="scottish" value="scottish">
-                        <label for="scottish">Scottish</label>
+                    <input type="radio" id="scottish" name="scottish" value="scottish">
+                    <label for="scottish">Scottish</label>
                         
-                        <input type="radio" id="british" name="bell" value="british">
-                        <label for="british">British</label>
+                    <input type="radio" id="british" name="bell" value="british">
+                    <label for="british">British</label>
       
-                        <input type="radio" id="german" name="bell" value="german">
-                        <label for="german">German</label>
-                </div>
-                <!--Scottish-->
+                    <input type="radio" id="german" name="bell" value="german">
+                    <label for="german">German</label>
+                    </div>
+                    <!--Scottish-->
                 
-                <br />
+                    <br />
                 
-                <h6>What is the Japanese name for Japan?</h6>
-                <div class="japan">
-                        <input type="radio" id="isha" name="japan" value="isha">
-                        <label for="isha">Isha</label>
+                    <h6>What is the Japanese name for Japan?</h6>
+                    <div class="japan">
+                    <input type="radio" id="isha" name="japan" value="isha">
+                    <label for="isha">Isha</label>
                         
-                        <input type="radio" id="eigo" name="japan" value="eigo">
-                        <label for="eigo">Eigo</label>
+                    <input type="radio" id="eigo" name="japan" value="eigo">
+                    <label for="eigo">Eigo</label>
                         
-                        <input type="radio" id="kiken" name="japan" value="kiken">
-                        <label for="kiken">Kiken</label>
+                    <input type="radio" id="kiken" name="japan" value="kiken">
+                    <label for="kiken">Kiken</label>
       
-                        <input type="radio" id="nippon" name="japan" value="nippon">
-                        <label for="nippon">Nippon</label>
-                </div>
-                <!--Nippon-->
+                    <input type="radio" id="nippon" name="japan" value="nippon">
+                    <label for="nippon">Nippon</label>
+                    </div>
+                    <!--Nippon-->
 
-                <br />
+                    <br />
                 
-                <h6>What was the name given to the first German democracy established in 1919?</h6>
-                <div class="germany">
-                        <input type="radio" id="weimar-republic" name="german" value="weimar-republic">
-                        <label for="weimar-republic">Weimar Republic</label>
+                    <h6>What was the name given to the first German democracy established in 1919?</h6>
+                    <div class="germany">
+                    <input type="radio" id="weimar-republic" name="german" value="weimar-republic">
+                    <label for="weimar-republic">Weimar Republic</label>
                         
-                        <input type="radio" id="bundestag" name="german" value="bundestag">
-                        <label for="bundestag">Bundestag</label>
+                    <input type="radio" id="bundestag" name="german" value="bundestag">
+                    <label for="bundestag">Bundestag</label>
                         
-                        <input type="radio" id="landtage" name="german" value="landtage">
-                        <label for="landtage">Landtage</label>
+                    <input type="radio" id="landtage" name="german" value="landtage">
+                    <label for="landtage">Landtage</label>
       
-                        <input type="radio" id="regierungsbezirke" name="german" value="regierungsbezirke">
-                        <label for="regierungsbezirke">Regierungsbezirke</label>
-                </div>
-                <!--Weimar Republic-->
+                    <input type="radio" id="regierungsbezirke" name="german" value="regierungsbezirke">
+                    <label for="regierungsbezirke">Regierungsbezirke</label>
+                    </div>
+                    <!--Weimar Republic-->
 
+                    <br />
+                
+                    <h6>In the novel and movie "Hitchhikers Guide to The Galaxy," what is the most important thing a hitchhiker can carry?</h6>
+                    <div class="hitchhiker">
+                    <input type="radio" id="boots" name="guide" value="boots">
+                    <label for="boots">Boots</label>
+                        
+                    <input type="radio" id="thumb" name="guide" value="thumb">
+                    <label for="thumb">Thumb</label>
+                        
+                    <input type="radio" id="towel" name="guide" value="towel">
+                    <label for="towel">Towel</label>
+      
+                    <input type="radio" id="watch" name="guide" value="watch">
+                    <label for="watch">Watch</label>
+                </div>
+                <!--towel-->
                 </form>
+                <br />
+                <div id="row"><button type="button" class="btn btn-dark btn-block">Done</button></div>
+            </div>
         </div>
+            <div id="wrapper-2">
+                <div id="row">
+                    <h5>All Done!</h5>
+                    <p>Correct Answers: <span id="correct"></span></p>
+                    <p>Incorrect Answers: <span id="incorrect"></span></p>
+                    <p>Unanswered: <span id="unanswered"></span></p>
+                </div>
+            </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
