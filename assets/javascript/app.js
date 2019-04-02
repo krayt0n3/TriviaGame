@@ -2,6 +2,9 @@ window.onload = function() {
 
 var clockRunning = false;
 var time = 90;
+var correct = 0;
+var incorrect = 0;
+var unanswered = 0;
 
 function countDown(t) {
     setInterval(() => time--, 1000);
@@ -36,7 +39,7 @@ function timeConverter(t) {
   var timeOn =timeConverter(time);
     //  TODO: Get the current time, pass that into the timeConverter function,
     //        and save the result in a variable.
-  $("#display-time").text(timeOn);
+  $("#display-time").append(timeOn);
     //  TODO: Use the variable you just created to show the converted time in the "display" div.
   
   }
@@ -50,7 +53,7 @@ function timeConverter(t) {
   
   }
 
-  //count();
+ count();
 
 
 
