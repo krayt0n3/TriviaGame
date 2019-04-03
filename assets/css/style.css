@@ -46,21 +46,12 @@ body {
 
 form {
     display: inherit;
-}
-
-
-.oaks,
-.viper,
-.phone,
-.japan,
-.germany,
-.hitchhiker {
     text-align: center;
-
 }
+
 
 label {
-    padding-right: .8%;
+    text-align: center;
 }
 
 

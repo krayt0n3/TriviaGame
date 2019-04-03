@@ -38,7 +38,73 @@ function changeScreens() {
 
 $('.btn-dark').click(changeScreens);
 
-$('#correct').html(correctAnswers);
+$("input[name=customRadioInline1]:radio").click(function()
+{ 
+  if($('#customRadioInline1-1').is(':checked')) { 
+    alert("it's checked"); 
+  correctAnswers += 1;
+  console.log(correctAnswers);
+  $('#correct').text(correctAnswers);
+  }
+});
+
+$("input[name=customRadioInline2]:radio").click(function()
+{ 
+  if($('#customRadioInline2-3').is(':checked')) { 
+    alert("it's checked"); 
+  correctAnswers += 1;
+  console.log(correctAnswers);
+  $('#correct').text(correctAnswers);
+  }
+});
+
+$("input[name=customRadioInline3]:radio").click(function()
+{ 
+  if($('#customRadioInline3-2').is(':checked')) { 
+    alert("it's checked"); 
+  correctAnswers += 1;
+  console.log(correctAnswers);
+  $('#correct').text(correctAnswers);
+  }
+});
+
+$("input[name=customRadioInline4]:radio").click(function()
+{ 
+  if($('#customRadioInline4-4').is(':checked')) { 
+    alert("it's checked"); 
+  correctAnswers += 1;
+  console.log(correctAnswers);
+  $('#correct').text(correctAnswers);
+  }
+});
+
+$("input[name=customRadioInline5]:radio").click(function()
+{ 
+  if($('#customRadioInline5-1').is(':checked')) { 
+    alert("it's checked"); 
+  correctAnswers += 1;
+  console.log(correctAnswers);
+  $('#correct').text(correctAnswers);
+  }
+});
+
+$("input[name=customRadioInline6]:radio").click(function()
+{ 
+  if($('#customRadioInline6-3').is(':checked')) { 
+    alert("it's checked"); 
+  correctAnswers += 1;
+  console.log(correctAnswers);
+  $('#correct').text(correctAnswers);
+  }
+});
+
+/*$("input[name=customRadioInline1]:radio").click(function() {
+  if($("input[name=customRadioInline1]:radio").val() === 'Quercus') {
+    correctAnswers += 1;
+  }
+});*/
+
+
 $('#incorrect').html(incorrectAnswers);
 $('#unanswered').html(unanswered);
 
