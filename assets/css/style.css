@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+
+
+body {
+    background-image: url('https://raw.githubusercontent.com/krayt0n3/TriviaGame/initial-site/assets/images/prism.png');
+}
+
+
+#container {
+    width: 70%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+
+.intro {
+    text-align: center;
+}
+
+
+#display-time {
+    text-align: center;
+}
+
+form {
+    display: inherit;
+    text-align: center;
+}
+
+
+label {
+    text-align: center;
+}
+
+
+.btn-dark:hover {
+    color: #23272b;
+    background-color: #fff;
+    border-color: #1d2124;
+}
+
+.btn-dark {
+    margin: 0 auto;
+}
+
+#wrapper {
+    display: block;
+}
+
+#wrapper-2 {
+    display: none;
+}
